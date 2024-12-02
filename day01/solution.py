@@ -4,6 +4,16 @@
 import argparse
 from collections import Counter
 
+def parse_input_to_lists(text:list[str]) -> tuple[list[int], list[int]]:
+    left_location_ids = []
+    right_location_ids = []
+    for line in text:
+        left_id, right_id = line.split()
+        left_location_ids.append(int(left_id))
+        right_location_ids.append(int(right_id))
+    return (left_location_ids, right_location_ids)
+
+
 def part_1(text: list[str]) -> int:
     """Parses 'text' into left and right (sorted) lists,
     and calculates total distance between each list value via zip(left, right).
@@ -15,12 +25,7 @@ def part_1(text: list[str]) -> int:
         int: The total distance.
     """
     total_distance = 0
-    left_location_ids = []
-    right_location_ids = []
-    for line in text:
-        left_id, right_id = line.split()
-        left_location_ids.append(int(left_id))
-        right_location_ids.append(int(right_id))
+    left_location_ids, right_location_ids = parse_input_to_lists(text)
     
     # Sort the two lists to match requirement
     left_location_ids.sort()
@@ -44,12 +49,7 @@ def part_2(text: list[str]) -> int:
         int: The similarity score.
     """
     similarity_score = 0
-    left_location_ids = []
-    right_location_ids = []
-    for line in text:
-        left_id, right_id = line.split()
-        left_location_ids.append(int(left_id))
-        right_location_ids.append(int(right_id))
+    left_location_ids, right_location_ids = parse_input_to_lists(text)
         
     right_id_counter = Counter(right_location_ids)
     for id in left_location_ids:
