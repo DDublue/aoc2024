@@ -1,4 +1,4 @@
-# aoc2024/day01/part1.py
+# aoc2024/day01/solution.py
 # Solution to Advent of Code 2024 Day 1: Historian Hysteria
 
 import argparse
