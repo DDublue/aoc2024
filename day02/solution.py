@@ -5,12 +5,6 @@ import argparse
 from copy import deepcopy
 
 
-def is_positive(num) -> bool:
-    return num > 0
-
-def is_negative(num) -> bool:
-    return num < 0
-
 def part_1(text: list[str]) -> int:
     """Goes through each report in text,
     and checks the levels for increases and decreases by at least 1/at most 3.
