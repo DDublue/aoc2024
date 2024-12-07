@@ -1,5 +1,5 @@
-# aoc2024/day01/solution.py
-# Solution to Advent of Code 2024 Day 1: Historian Hysteria
+# aoc2024/day03/solution.py
+# Solution to Advent of Code 2024 Day 3: Mull It Over
 
 import argparse
 import re

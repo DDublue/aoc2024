@@ -1,5 +1,5 @@
-# aoc2024/day01/solution.py
-# Solution to Advent of Code 2024 Day 1: Historian Hysteria
+# aoc2024/day02/solution.py
+# Solution to Advent of Code 2024 Day 2: Red-Nosed Reports
 
 import argparse
 from copy import deepcopy
