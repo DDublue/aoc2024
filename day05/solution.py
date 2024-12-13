@@ -1,4 +1,4 @@
-# aoc2024/day04/solution.py
+# aoc2024/day05/solution.py
 # Solution to Advent of Code 2024 Day 5: Print Queue
 
 import argparse
